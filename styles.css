@@ -1,0 +1,9 @@
+.hoverDiv {
+    background-color: white;
+    border: 1px solid red;
+    padding: 4px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    max-Width: 400px
+}

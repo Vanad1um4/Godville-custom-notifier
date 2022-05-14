@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "GCN",
+    "description": "Godville custom notifier",
+    "version": "0.1",
+    "icons": {"128": "icon_128.png"},
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "js": ["content.js"],
+            "matches": ["*://godville.net/*"]
+        },{
+            "css": [ "styles.css" ],
+            "matches": ["*://godville.net/*"]
+        }
+    ],
+    "action": {
+        "deafult_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab",
+        "notifications",
+        "tabs",
+        "storage"
+    ]
+}
